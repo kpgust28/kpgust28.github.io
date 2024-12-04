@@ -4,66 +4,85 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #e9f5ea;
+    color: #2b2b2b;
 }
 
 /* Header */
 header {
-    background-color: #222;
+    background-color: #184d47;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 header .header-content h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 header .header-content p {
     margin: 0.5rem 0;
+    font-size: 1.2rem;
 }
 
 header .social-links {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 header .social-links .icon {
-    margin: 0 0.5rem;
+    margin: 0 0.8rem;
     display: inline-block;
+    transition: transform 0.3s;
 }
 
 header .social-links img {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     vertical-align: middle;
+}
+
+header .social-links .icon:hover {
+    transform: scale(1.2);
 }
 
 header .button {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #0078d7;
+    padding: 0.7rem 1.5rem;
+    background-color: #0f3d37;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 header .button:hover {
-    background-color: #0056a1;
+    background-color: #1e8b73;
+    transform: translateY(-2px);
 }
 
 /* Main Content */
 main {
     max-width: 800px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-main section {
-    margin-bottom: 2rem;
+/* Section Titles */
+main section h2 {
+    font-size: 1.8rem;
+    color: #184d47;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #1e8b73;
+    padding-left: 0.5rem;
 }
 
 /* Photo Section */
@@ -73,29 +92,31 @@ main section {
     height: 150px;
     border-radius: 50%;
     margin: 0 auto;
-    border: 3px solid #0078d7;
+    border: 3px solid #1e8b73;
 }
 
-/* Section Titles */
-main section h2 {
-    font-size: 1.8rem;
-    color: #0078d7;
-    margin-bottom: 0.5rem;
-}
-
-/* Projects & News Lists */
+/* Lists */
 .projects ul, .news ul {
     list-style-type: none;
     padding: 0;
 }
 
 .projects li, .news li {
-    margin: 0.5rem 0;
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    border: 1px solid #d2e5dc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.projects li:hover, .news li:hover {
+    background-color: #f0f8f5;
 }
 
 .projects a {
-    color: #0078d7;
+    color: #184d47;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .projects a:hover {
@@ -105,8 +126,8 @@ main section h2 {
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem 0;
-    background-color: #222;
+    padding: 1.5rem 0;
+    background-color: #184d47;
     color: #fff;
     font-size: 0.9rem;
 }
